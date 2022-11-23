@@ -2,11 +2,11 @@ from abc import ABC
 
 from speech_recognition import Recognizer, AudioData, Microphone
 
-from config import MICROPHONE_AUDIO_FILES_PATH
+from config import MICROPHONE_USER_AUDIO_FILES_PATH
 
 
 class AssistantRecognizer(Recognizer, ABC):
-    user_audio_filename = MICROPHONE_AUDIO_FILES_PATH / "user_audio.flac"
+    user_audio_filename = MICROPHONE_USER_AUDIO_FILES_PATH / "user_audio.flac"
 
     def __init__(self):
         super().__init__()

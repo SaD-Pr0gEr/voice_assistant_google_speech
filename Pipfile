@@ -7,6 +7,8 @@ name = "pypi"
 pyaudio = "*"
 speechrecognition = "*"
 google-cloud-speech = "*"
+pyjwt = "*"
+google-cloud-texttospeech = "*"
 
 [dev-packages]
 

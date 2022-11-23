@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "fbcd9622055dc14ac3e51edb47bc87dc8d1e8cb936c4c078b01272e55ad6ee04"
+            "sha256": "068aa7339ecb787cfb8985f3b09a7d6278d28ceb27e6c587863b652d072cc75d"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -135,6 +135,14 @@
             ],
             "index": "pypi",
             "version": "==2.16.2"
+        },
+        "google-cloud-texttospeech": {
+            "hashes": [
+                "sha256:5fd11e1dbc8bfcf6466ae3309b3592f4d5080939426734d43b2b81f1f99ab684",
+                "sha256:8274a5fd6d264efe88b7fffec55e6d8b445dea2a351a1e32c5dd1aaeb6c43ed4"
+            ],
+            "index": "pypi",
+            "version": "==2.12.3"
         },
         "googleapis-common-protos": {
             "hashes": [
@@ -296,6 +304,14 @@
                 "sha256:e644fdec12f7872f86c58ff790da456218b10f863970249516d60a5eaca77206"
             ],
             "version": "==2.21"
+        },
+        "pyjwt": {
+            "hashes": [
+                "sha256:69285c7e31fc44f68a1feb309e948e0df53259d579295e6cfe2b1792329f05fd",
+                "sha256:d83c3d892a77bbb74d3e1a2cfa90afaadb60945205d1095d9221f04466f64c14"
+            ],
+            "index": "pypi",
+            "version": "==2.6.0"
         },
         "requests": {
             "hashes": [
