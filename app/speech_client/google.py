@@ -1,13 +1,11 @@
 import os
+from pathlib import WindowsPath
 
 from google.cloud import texttospeech
 from google.cloud.texttospeech_v1 import AudioConfig
 
-from config import MICROPHONE_ASSISTANT_AUDIO_FILES_PATH
-
 
 class AssistantSpeechGoogleClient(texttospeech.TextToSpeechClient):
-    assistant_audio_file = MICROPHONE_ASSISTANT_AUDIO_FILES_PATH / "answer.wav"
 
     def __init__(self, config_file_path: str, language: str = "ru"):
         self.config_file = config_file_path
@@ -38,8 +36,8 @@ class AssistantSpeechGoogleClient(texttospeech.TextToSpeechClient):
         )
         return response
 
-    def get_and_save_speech(self, audio_text: str) -> str:
+    def get_and_save_speech(self, audio_text: str, voice_file_path: str) -> str:
         content = self.speech_request(audio_text)
-        with open(self.assistant_audio_file, "wb") as file:
+        with open(voice_file_path, "wb") as file:
             file.write(content.audio_content)
-        return self.assistant_audio_file
+        return voice_file_path
