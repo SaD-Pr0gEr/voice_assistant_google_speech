@@ -1,6 +1,5 @@
 import os.path
 import time
-from abc import ABC
 from pathlib import WindowsPath
 
 from app.utils.audio import AudioPlayer

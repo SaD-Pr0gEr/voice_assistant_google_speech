@@ -1,5 +1,4 @@
 import os
-from pathlib import WindowsPath
 
 from google.cloud import texttospeech
 from google.cloud.texttospeech_v1 import AudioConfig
